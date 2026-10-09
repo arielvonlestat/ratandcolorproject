@@ -58,9 +58,11 @@ const searchRat = (name) => {
       "You silly sausage, that isn't the name of one of your rats! Learn your rats!",
     );
   } else {
-    console.log(
-      `Your rat ${foundRat.name} is ${foundRat.color} and a handsome boy!`,
-    );
+    window.location.href = `rat-results.html?name=${foundRat.name}`;
+
+    // console.log(
+    //   `Your rat ${foundRat.name} is ${foundRat.color} and a handsome boy!`,
+    // );
   }
 };
 
