@@ -1,0 +1,128 @@
+:root {
+  --pureWhite: #ffffff;
+  --Black: #202020;
+  --Brown: #5e503f;
+  --DarkGrayStripped: #6c757d;
+  --LightGrayStripped: #adb5bd;
+  --TurquoiseBlue: #6096ba;
+  --FeelingLucky1: #ffbe0b;
+  --FeelingLucky2: #fb5607;
+  --FeelingLucky3: #ff006e;
+  --FeelingLucky4: #8338ec;
+  --FeelingLucky5: #3a86ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  gap: 1.5rem;
+  background-color: var(--TurquoiseBlue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Libre Caslon Condensed", sans-serif;
+  font-size: 3rem;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.buttons {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.ratName,
+.ratColor {
+  all: unset;
+  font-family: "Oswald", sans-serif;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.ratName {
+  color: var(--TurquoiseBlue);
+  background: var(--Black);
+}
+
+.ratColor {
+  color: var(--TurquoiseBlue);
+  background: var(--Black);
+}
+
+.random {
+  all: unset;
+  padding-inline: 2rem;
+  padding-block: 0.8rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  background-color: var(--Black);
+  cursor: pointer;
+}
+
+.f {
+  color: var(--FeelingLucky1);
+}
+
+.e1 {
+  color: var(--FeelingLucky2);
+}
+
+.e2 {
+  color: var(--FeelingLucky3);
+}
+
+.l1 {
+  color: var(--FeelingLucky4);
+}
+
+.i {
+  color: var(--FeelingLucky5);
+}
+
+.n {
+  color: var(--FeelingLucky1);
+}
+
+.g {
+  color: var(--FeelingLucky2);
+}
+
+.l2 {
+  color: var(--FeelingLucky3);
+}
+
+.u {
+  color: var(--FeelingLucky4);
+}
+
+.c {
+  color: var(--FeelingLucky5);
+}
+
+.k {
+  color: var(--FeelingLucky1);
+}
+
+.y {
+  color: var(--FeelingLucky2);
+}
+
+.mark {
+  color: var(--FeelingLucky3);
+}
