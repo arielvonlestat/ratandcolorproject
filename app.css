@@ -232,3 +232,31 @@ label {
 .filler {
   padding-top: 0.7rem;
 }
+
+@media (max-width: 1000px) {
+  #rat-image {
+    border-radius: 12rem;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .reveal {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #rat-color {
+    font-size: 2rem;
+  }
+
+  #rat-name {
+    font-size: 2rem;
+    position: relative;
+    top: 1rem;
+  }
+
+  .filler {
+    padding-top: none;
+  }
+}
