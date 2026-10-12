@@ -91,7 +91,7 @@ const searchColor = (color) => {
       "You silly sausage, that's not a real rat! No offense but perhaps you should see a therapist.",
       "Aww poor rats, you don't even care enough about them to learn their names & colors (╥﹏╥)",
       "How do you sleep at night? Not knowing their names or colors?",
-      "I mean spotted & striped are probably not colors either but at least their in the database.",
+      "I mean spotted & striped are probably not colors either but at least they're in the database.",
     ];
 
     const randomIndex = Math.floor(Math.random() * errorMessages.length);

@@ -28,28 +28,28 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Libre Caslon Condensed", sans-serif;
+  font-family: "Libre Caslon Condensed";
   font-size: 3rem;
 }
 
 p {
   text-align: center;
   font-size: 2rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display";
 }
 
 .buttons {
-  height: 150px;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
 }
 
 .ratName,
 .ratColor {
   all: unset;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   padding-inline: 2rem;
   padding-block: 0.5rem;
   border-radius: 0.5rem;
@@ -125,4 +125,41 @@ p {
 
 .mark {
   color: var(--FeelingLucky3);
+}
+
+.back-button {
+  font-size: 1.2rem;
+  background-color: var(--Black);
+  color: var(--FeelingLucky2);
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-family: "Oswald";
+}
+
+label {
+  display: none;
+}
+
+#rat-image {
+  border-radius: 12rem;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.resultName,
+.resultColor {
+  font-size: 3rem;
+  font-family: "Oswald";
+}
+
+.resultsReady {
+  margin-bottom: 2rem;
+}
+
+#name-error,
+#color-error {
+  font-size: 1.5rem;
+  width: 250px;
 }
