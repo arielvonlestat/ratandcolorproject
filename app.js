@@ -25,7 +25,8 @@ ratColorInput.addEventListener("input", () => {
 const ratRandom = document.querySelector(".random");
 
 ratRandom.addEventListener("click", () => {
-  feelingLucky(ratRandom.value);
+  const randomRat = feelingLucky();
+  window.location.href = `rat-results.html?name=${randomRat.name}`;
 });
 
 const rats = [
