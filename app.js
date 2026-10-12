@@ -54,15 +54,21 @@ const searchRat = (name) => {
   );
 
   if (!foundRat) {
-    console.log(
-      "You silly sausage, that isn't the name of one of your rats! Learn your rats!",
-    );
+    const randomName = feelingLucky();
+
+    const errorMessages = [
+      "You silly sausage, that's not a real rat! No offense but perhaps you should see a doctor.",
+      "Aww poor rats, you don't even care enough about them to learn their names & colors (˃̣̣̥ᯅ˂̣̣̥)",
+      "How do you live with yourself? Not knowing their names or colors?",
+      `${randomName.name} is trying not to cry but he'll get over it, probably.`,
+    ];
+
+    const randomIndex = Math.floor(Math.random() * errorMessages.length);
+
+    document.querySelector("#name-error").textContent =
+      errorMessages[randomIndex];
   } else {
     window.location.href = `rat-results.html?name=${foundRat.name}`;
-
-    // console.log(
-    //   `Your rat ${foundRat.name} is ${foundRat.color} and a handsome boy!`,
-    // );
   }
 };
 
@@ -72,20 +78,24 @@ const searchColor = (color) => {
   );
 
   if (!foundColor) {
-    console.log(
-      "You silly sausage, that isn't the color of one of your rats! Learn your rats!",
-    );
+    const errorMessages = [
+      "You silly sausage, that's not a real rat! No offense but perhaps you should see a therapist.",
+      "Aww poor rats, you don't even care enough about them to learn their names & colors (╥﹏╥)",
+      "How do you sleep at night? Not knowing their names or colors?",
+      "I mean spotted & striped are probably not colors either but at least their in the database.",
+    ];
+
+    const randomIndex = Math.floor(Math.random() * errorMessages.length);
+
+    document.querySelector("#color-error").textContent =
+      errorMessages[randomIndex];
   } else {
-    console.log(
-      `Your rat is a gorgeous ${foundColor.color} color and I think their name may be ${foundColor.name}, right?`,
-    );
+    window.location.href = `rat-results.html?color=${foundColor.color}`;
   }
 };
 
 const feelingLucky = () => {
-  const random = Math.floor(Math.random() * 5);
+  const random = Math.floor(Math.random() * rats.length);
   const randomRat = rats[random];
-  console.log(
-    `Your magical, mythical, randomized rat is none other that the great ${randomRat.name}, he's ${randomRat.color} by the way, in case you bothered to even ask! Sheesh!`,
-  );
+  return randomRat;
 };

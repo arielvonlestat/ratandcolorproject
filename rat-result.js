@@ -1,8 +1,8 @@
-document.querySelector("#rat-name").textContent = foundRat.name;
-
 const params = new URLSearchParams(window.location.search);
 
 let ratName = params.get("name");
+
+let ratColor = params.get("color");
 
 const rats = [
   {
@@ -32,6 +32,20 @@ const rats = [
   },
 ];
 
-const foundRat = rats.find(
-  (rat) => rat.name.toLowerCase() === ratName.toLowerCase(),
-);
+let foundRat;
+
+if (ratName) {
+  foundRat = rats.find(
+    (rat) => rat.name.toLowerCase() === ratName.toLowerCase(),
+  );
+} else if (ratColor) {
+  foundRat = rats.find(
+    (rat) => rat.color.toLowerCase() === ratColor.toLowerCase(),
+  );
+}
+
+document.querySelector("#rat-name").textContent = foundRat.name;
+
+document.querySelector("#rat-color").textContent = foundRat.color;
+
+document.querySelector("#rat-image").src = foundRat.image;

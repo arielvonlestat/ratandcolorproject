@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rat's Name & Colors</title>
+    <title>Non-Existent Rats</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +22,23 @@
     </p>
     <p>Before you, you have a choice.</p>
     <div class="buttons">
-      <input class="ratName" type="text" placeholder="Enter Name" />
-      <input class="ratColor" type="text" placeholder="Enter Color" />
+      <label for="rat-name">Rat Name</label>
+      <input
+        id="rat-name"
+        class="ratName"
+        type="text"
+        placeholder="Enter Name"
+      />
+      <p id="name-error" aria-live="polite"></p>
+
+      <label for="rat-color">Rat Color</label>
+      <input
+        id="rat-color"
+        class="ratColor"
+        type="text"
+        placeholder="Enter Color"
+      />
+      <p id="color-error" aria-live="polite"></p>
       <button class="random" type="button">
         <span class="f">F</span>
         <span class="e1">e</span>
