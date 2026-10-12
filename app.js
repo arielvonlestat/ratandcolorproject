@@ -14,6 +14,14 @@ ratColorInput.addEventListener("keydown", (event) => {
   }
 });
 
+ratNameInput.addEventListener("input", () => {
+  document.querySelector("#name-error").textContent = "";
+});
+
+ratColorInput.addEventListener("input", () => {
+  document.querySelector("#color-error").textContent = "";
+});
+
 const ratRandom = document.querySelector(".random");
 
 ratRandom.addEventListener("click", () => {
