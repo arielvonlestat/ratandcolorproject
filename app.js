@@ -1,4 +1,11 @@
+const cheaterCheater = document.querySelector("#cheat-sheet");
+const secretTrigger = document.querySelector("#secret-trigger");
+
 const ratNameInput = document.querySelector(".ratName");
+
+secretTrigger.addEventListener("click", () => {
+  cheaterCheater.classList.toggle("hidden");
+});
 
 ratNameInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {

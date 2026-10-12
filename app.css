@@ -38,6 +38,14 @@ p {
   font-family: "Playfair Display";
 }
 
+.opening {
+  padding-bottom: 2rem;
+}
+
+.middle {
+  padding-bottom: 1rem;
+}
+
 .buttons {
   height: 350px;
   display: flex;
@@ -128,6 +136,7 @@ p {
 }
 
 .back-button {
+  margin-top: 2rem;
   font-size: 1.2rem;
   background-color: var(--Black);
   color: var(--FeelingLucky2);
@@ -154,7 +163,7 @@ label {
   font-family: "Oswald";
 }
 
-.resultsReady {
+.resultColor {
   margin-bottom: 2rem;
 }
 
@@ -162,4 +171,64 @@ label {
 #color-error {
   font-size: 1.5rem;
   width: 250px;
+}
+
+#cheat-sheet {
+  padding: 1rem;
+  background-color: var(--pureWhite);
+  color: var(--TurquoiseBlue);
+  border-radius: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.cheater {
+  color: var(--Black);
+  background-color: var(--FeelingLucky4);
+}
+
+.timothy {
+  background-color: var(--Brown);
+  color: var(--Black);
+}
+
+.jeremiah {
+  background-color: var(--Black);
+  color: var(--Brown);
+}
+
+.gregory {
+  color: var(--pureWhite);
+  background-color: var(--TurquoiseBlue);
+}
+
+.stephen {
+  background-color: var(--DarkGrayStripped);
+  color: var(--LightGrayStripped);
+}
+
+.walter {
+  background-color: var(--LightGrayStripped);
+  color: var(--DarkGrayStripped);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#secret-trigger {
+  cursor: pointer;
+}
+
+.reveal {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.filler {
+  padding-top: 0.7rem;
 }
