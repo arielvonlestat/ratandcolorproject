@@ -74,8 +74,8 @@ const searchRat = (name) => {
 
     const errorMessages = [
       "You silly sausage, that's not a real rat! No offense but perhaps you should see a doctor.",
-      "Aww poor rats, you don't even care enough about them to learn their names & colors (˃̣̣̥ᯅ˂̣̣̥)",
-      "How do you live with yourself? Not knowing their names or colors?",
+      "Aww poor rats, you don't even care enough about them to learn their names (˃̣̣̥ᯅ˂̣̣̥)",
+      "How do you live with yourself? Not knowing their names?",
       `${randomName.name} is trying not to cry but he'll get over it, probably.`,
     ];
 
@@ -96,8 +96,8 @@ const searchColor = (color) => {
   if (!foundColor) {
     const errorMessages = [
       "You silly sausage, that's not a real rat! No offense but perhaps you should see a therapist.",
-      "Aww poor rats, you don't even care enough about them to learn their names & colors (╥﹏╥)",
-      "How do you sleep at night? Not knowing their names or colors?",
+      "Aww poor rats, you don't even care enough about them to learn their colors (╥﹏╥)",
+      "How do you sleep at night? Not knowing their colors?",
       "I mean spotted & striped are probably not colors either but at least they're in the database.",
     ];
 
