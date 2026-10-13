@@ -246,11 +246,11 @@ label {
     gap: 1rem;
   }
 
-  #rat-color {
+  .resultColor {
     font-size: 2rem;
   }
 
-  #rat-name {
+  .resultName {
     font-size: 2rem;
     position: relative;
     top: 1rem;
